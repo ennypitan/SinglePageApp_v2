@@ -57,7 +57,7 @@ function EventsPage() {
   return (
     <>
       <div style={{ textAlign: "center" }}>
-        {isLoading && <p>Loading...</p>}
+        {isLoading && <p>Loading....</p>}
         {error && <p>{error}</p>}
       </div>
       {!isLoading && fetchedEvents && <EventsList events={fetchedEvents} />}
